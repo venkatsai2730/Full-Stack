@@ -1,0 +1,198 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic Layout */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container to limit width */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #222;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  animation: fadeInDown 0.8s ease;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #00a2ff;
+}
+
+header nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #00a2ff;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #007bff, #00a2ff);
+  color: white;
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.hero button {
+  padding: 0.8rem 1.6rem;
+  background-color: white;
+  color: #007bff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+#about {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #f8faff;
+}
+
+#about h3 {
+  font-size: 2.2rem;
+  color: #007bff;
+  margin-bottom: 1.5rem;
+}
+
+#about p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* Application Form Page */
+#apply {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+#apply h3 {
+  font-size: 2.2rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+#apply form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#apply form input,
+#apply form textarea {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+#apply form input:focus,
+#apply form textarea:focus {
+  border-color: #007bff;
+}
+
+#apply button {
+  padding: 0.8rem 1.6rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#apply button:hover {
+  background-color: #005bb5;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  padding: 1.5rem 2rem;
+  text-align: center;
+  background-color: #222;
+  color: white;
+}
+
+footer p {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
